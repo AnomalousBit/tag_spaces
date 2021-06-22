@@ -1,5 +1,5 @@
 # tag_spaces
-This is an extension to the herbstluft window manager that adds a new concept called tag spaces.
+tag_spaces is an extension to herbstluftwm that adds a new concept called tag spaces.
 
 Tag Spaces creates one or more groups of tags, combined with a single selected active tag space that determines which group of tags is to be currently viewed & acted upon.
 
