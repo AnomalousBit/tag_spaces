@@ -24,9 +24,9 @@ Then at last, call the initialization script inside of your herbstluftwm `autost
 source $HOME/.config/herbstluftwm/tag_spaces/init_tag_spaces.sh
 ```
 
-# Default Keybinds
+# Why tag_spaces?
 
-Having a long running history with other WMs like Gnome, Cinnamon and KDE Plasma, I'm a big fan of the traditional Ctrl-Alt-[left/right] and Ctrl-Alt-Shift-[left/right] to navigate and move windows between virtual desktops. This extension recreates that feel, along with a new set of 0-9 tags for each tag space.
+Having a long running history with other WMs like Gnome, Cinnamon and KDE Plasma, I'm a big fan of the traditional Ctrl-Alt-[left/right] and Ctrl-Alt-Shift-[left/right] to navigate and move windows between virtual desktops, updating multiple monitors at once. This extension recreates that feel, along with a new set of 0-9 tags for each tag space. It's like having multiple instances of herbstluftwm in a way.
 
 There are also default keybinds for Mod+slash and Mod+backslash for navigating to a specific tag_space and toggling back to the default un-tag_spaced tags.
 
