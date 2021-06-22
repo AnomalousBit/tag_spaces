@@ -34,21 +34,21 @@ There are also default keybinds for Mod+slash and Mod+backslash for navigating t
 
 ## switch_tag_space.sh
 This script will allow you to navigate and move between tag_spaces using:
-The tag_space name (first argument, optional)
-Move focused window (second argument as 'move', optional)
+* The tag_space name (first argument, optional)
+* Move focused window (second argument as "move", optional)
 
 ```
 # switch to tag_space_1
-./switch_tag_space.sh tag_space_1 move
+./switch_tag_space.sh tag_space_1
 
-# moves the current focused window and switches to tag_space_1
+# moves the current focused window (focused monitor aware) and switches to tag_space_1
 ./switch_tag_space.sh tag_space_1 move
 ```
 
 ## switch_tag_space_by_index.sh
 This script will allow you to navigate and move between tag_spaces using:
-The relative index (+1, -2) or absolute index (0, 1, 2, 3...) of the tag_spaces array (first argument, required)
-Move focused window (second argument as 'move', optional)
+* The relative index (+1, -2) or absolute index (0, 1, 2, 3...) of the tag_spaces array (first argument, required)
+* Move focused window (second argument as 'move', optional)
 
 ```
 # switch to the next tag_space
