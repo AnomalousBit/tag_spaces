@@ -1,7 +1,9 @@
 # tag_spaces
 tag_spaces is an extension to herbstluftwm that adds a new concept called tag spaces.
 
-Tag Spaces creates one or more groups of tags, combined with a single selected active tag space that determines which group of tags is to be currently viewed & acted upon.
+A Tag Space is a group of tags along with keybindings that only operate on the currently selected tag space.
+
+The current / active tag space is selected by using keybinds and can be specified by name, relative or cardinal array index.
 
 By switching to a new tag space, the default Mod+[0-9] keybinds are remapped to the selected tag space and it's first N tags are automatically displayed on your first N monitors.
 
