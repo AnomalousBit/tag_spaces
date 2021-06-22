@@ -14,6 +14,10 @@ else
 	active_tag_space=$requested_tag_space
 fi
 
+# switch to new index
+tag_prefix=""
+if [[ $active_tag_space != "default" ]] ; then tag_prefix="${active_tag_space}_" ; fi
+
 # update keybinds
 for i in "${!tag_names[@]}" ; do
 	key="${tag_keys[$i]}"
@@ -22,10 +26,6 @@ for i in "${!tag_names[@]}" ; do
 		hc keybind "$Mod-Shift-$key" move "${tag_prefix}${i}"
 	fi
 done
-
-# switch to new index
-tag_prefix=""
-if [[ $active_tag_space != "default" ]] ; then tag_prefix="${active_tag_space}_" ; fi
 
 current_monitor=`hc get_attr monitors.focus.index`
 monitor_count=`hc get_attr monitors.count`

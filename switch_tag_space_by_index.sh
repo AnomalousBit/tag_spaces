@@ -43,6 +43,15 @@ requested_tag_space=${tag_spaces[$new_index]}
 tag_prefix="" # no prefix is used for the default tag space
 if [[ $requested_tag_space != "default" ]]; then tag_prefix="${requested_tag_space}_" ; fi
 
+# update keybinds
+for i in "${!tag_names[@]}" ; do
+	key="${tag_keys[$i]}"
+	if ! [ -z "$key" ] ; then
+		hc keybind "$Mod-$key" use "${tag_prefix}${i}"
+		hc keybind "$Mod-Shift-$key" move "${tag_prefix}${i}"
+	fi
+done
+
 #######################
 # switch to new index #
 #######################
